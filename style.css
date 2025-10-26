@@ -11,6 +11,29 @@ header {
   text-align: center;
   padding: 2rem 1rem;
 }
+/* 🌿 Add navbar styling BELOW header and ABOVE h1,h2 */
+.navbar {
+  background-color: #c07a2e;
+  text-align: center;
+  padding: 0.8rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 1.2rem;
+  font-size: 1.05rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #f5d9a6;
+}
+
 h1, h2 {
   font-family: 'Playfair Display', serif;
   color: #6a1b1b;
