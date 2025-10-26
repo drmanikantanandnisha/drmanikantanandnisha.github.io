@@ -1,29 +1,10 @@
-/* 🌿 General Styling */
+/* 🌿 General Page Setup */
 body {
   font-family: 'Open Sans', sans-serif;
   background: #fffaf2;
   color: #3b2f2f;
   line-height: 1.6;
   margin: 0;
-}
-
-/* 🌿 Header Banner */
-header {
-  background: #6a1b1b;
-  color: #fff;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-h1, h2 {
-  font-family: 'Playfair Display', serif;
-  color: #6a1b1b;
-}
-
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem;
 }
 
 /* 🌿 Navigation Bar */
@@ -53,27 +34,60 @@ section {
   border-bottom: 2px solid #fff;
 }
 
-/* 🌿 Bio Sections */
+/* 🌿 Header / Banner */
+header {
+  background: #6a1b1b;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 0;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #f5d9a6;
+  margin-top: 0;
+}
+
+/* 🌿 Section Formatting */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #6a1b1b;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+/* 🌿 Bio Layout */
 .bio {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.5rem;
   margin-bottom: 2rem;
-}
-
-.profile-img {
-  width: 250px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .bio-text {
   flex: 1;
   min-width: 260px;
+  font-size: 1.05rem;
 }
 
-/* 🌿 Quote Box */
+/* 🌿 Quote Styling */
 .quote {
   font-style: italic;
   color: #6a1b1b;
@@ -82,6 +96,7 @@ section {
   padding: 1rem 1.5rem;
   margin: 2rem auto;
   max-width: 850px;
+  font-size: 1.1rem;
 }
 
 /* 🌿 Call-to-Action Button */
@@ -93,6 +108,8 @@ section {
   border-radius: 6px;
   margin-top: 1rem;
   text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
 }
 
 .cta:hover {
@@ -106,6 +123,7 @@ footer {
   text-align: center;
   padding: 1.5rem;
   font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 footer a {
@@ -117,14 +135,27 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* 🌿 Responsive */
+/* 🌿 Responsive Design */
 @media (max-width: 700px) {
   .bio {
     flex-direction: column;
     text-align: center;
   }
+
   .navbar a {
     display: inline-block;
-    margin: 0.5rem;
+    margin: 0.4rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
   }
 }
