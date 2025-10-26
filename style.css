@@ -1,3 +1,4 @@
+/* 🌿 General Styling */
 body {
   font-family: 'Open Sans', sans-serif;
   background: #fffaf2;
@@ -5,13 +6,27 @@ body {
   line-height: 1.6;
   margin: 0;
 }
+
+/* 🌿 Header Banner */
 header {
   background: #6a1b1b;
   color: #fff;
   text-align: center;
   padding: 2rem 1rem;
 }
-/* 🌿 Add navbar styling BELOW header and ABOVE h1,h2 */
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #6a1b1b;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* 🌿 Navigation Bar */
 .navbar {
   background-color: #c07a2e;
   text-align: center;
@@ -34,34 +49,42 @@ header {
   color: #f5d9a6;
 }
 
-h1, h2 {
-  font-family: 'Playfair Display', serif;
-  color: #6a1b1b;
+.navbar a.active {
+  border-bottom: 2px solid #fff;
 }
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem;
+
+/* 🌿 Bio Sections */
+.bio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
+
 .profile-img {
   width: 250px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-footer {
-  background: #6a1b1b;
-  color: #f9e8d9;
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
+
+.bio-text {
+  flex: 1;
+  min-width: 260px;
 }
-a {
+
+/* 🌿 Quote Box */
+.quote {
+  font-style: italic;
   color: #6a1b1b;
-  text-decoration: none;
+  background: #fdf1e5;
+  border-left: 5px solid #c07a2e;
+  padding: 1rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 850px;
 }
-a:hover {
-  text-decoration: underline;
-}
+
+/* 🌿 Call-to-Action Button */
 .cta {
   display: inline-block;
   background: #c07a2e;
@@ -69,7 +92,39 @@ a:hover {
   padding: 0.7rem 1.3rem;
   border-radius: 6px;
   margin-top: 1rem;
+  text-decoration: none;
 }
+
 .cta:hover {
   background: #a7661f;
+}
+
+/* 🌿 Footer */
+footer {
+  background: #6a1b1b;
+  color: #f9e8d9;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #f9e8d9;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* 🌿 Responsive */
+@media (max-width: 700px) {
+  .bio {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
 }
